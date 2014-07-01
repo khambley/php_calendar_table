@@ -1,8 +1,14 @@
 <!doctype html>
 <html>
 <head>
+<!--  Developer: Katherine Hambley
+			Email: 		superdesigngirl@mac.com
+      Date Created: June 14, 2014
+      Credit: Thanks to Chris Coyier at css-tricks.com for code snippet
+      http://css-tricks.com/snippets/php/build-a-calendar-table/
+-->
 <meta charset="utf-8">
-<title>11 - Calendar Table</title>
+<title>Calendar Table</title>
 <style>
     * {
         margin: 0;
