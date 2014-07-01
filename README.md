@@ -2,6 +2,7 @@ php_calendar_table
 ==================
 
 Creates a calendar based on user's birthday, month and day, and current year. (O'Reilly School Project #11)
+
 In this project, you'll create a calendar for the month in which your birthday falls for the current year. 
 
 You should use date and time functions and a loop to create an html table that will display the calendar in the appropriate
