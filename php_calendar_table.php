@@ -1,13 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<!--Developer:    Katherine Hambley
-		Email: 				superdesigngirl@mac.com
-		Description:  O'Reilly School PHP Project 11 - Date / Time Functions
-    Date Created: June 14, 2014
- -->
 <meta charset="utf-8">
-<title>Calendar Table</title>
+<title>11 - Calendar Table</title>
 <style>
     * {
         margin: 0;
@@ -111,7 +106,8 @@ function calendar_table($month, $bday, $year, $dateArray) {
 			$dayofWeek = 0;
 			$calendar .= "</tr><tr>";
 		} 
-        
+        		$currentDayRel = $currentDay;
+						
             $date = "$year-$month-$currentDayRel";
             
             if ($currentDay == $bday) {
@@ -199,9 +195,13 @@ function calendar_table($month, $bday, $year, $dateArray) {
         <input type="submit" value="Submit" />
     </form><br />
 <?php
+
 $dateArray = getdate();
-$month = $_GET['month'];
-$bday = $_GET['day'];
+if (isset($_GET['month']) && isset($_GET['day'])) {
+	$month = $_GET['month'];
+	$bday = $_GET['day'];
+}
+
 $year = $dateArray['year'];
 if (isset($month) && isset($bday)) {
     echo calendar_table($month, $bday, $year, $dateArray);
